@@ -1,0 +1,38 @@
+.bd {
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+.mainDiv {
+    width: 252px;
+    height: 252px;
+    position: relative;
+    margin: 0 auto;
+}
+.ui.horizontal.list>.item {
+    display: block;
+    margin-left: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+.ui.horizontal.list {
+    display: block;
+    font-size: 0;
+    margin: 40px auto;
+}
+.button_Class {
+    margin: 0 auto;
+    display: block;
+
+}
+.but {
+
+    margin: 0 auto;
+    display: block;
+    width: 180px;
+
+}
+p {
+    text-align: center;
+}

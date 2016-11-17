@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="mainDiv ui input focus horizontal list" id="mainDive">
+
+    <input type="text" title="0" class="bd item" id="0" MAXLENGTH="1" onchange="changehandler(event)">
+    <input type="text" title="1" class="bd item" id="1" MAXLENGTH="1" onchange="changehandler(event)">
+    <input type="text" title="2" class="bd item" id="2" MAXLENGTH="1" onchange="changehandler(event)">
+    <input type="text" title="3" class="bd item" id="3" MAXLENGTH="1" onchange="changehandler(event)">
+    <input type="text" title="4" class="bd item" id="4" MAXLENGTH="1" onchange="changehandler(event)">
+    <input type="text" title="5" class="bd item" id="5" MAXLENGTH="1" onchange="changehandler(event)">
+    <input type="text" title="6" class="bd item" id="6" MAXLENGTH="1" onchange="changehandler(event)">
+    <input type="text" title="7" class="bd item" id="7" MAXLENGTH="1" onchange="changehandler(event)">
+    <input type="text" title="8" class="bd item" id="8" MAXLENGTH="1" onchange="changehandler(event)">
+</div>
+
+<script src="js.js"></script>
+<script src="jscheck.js"></script>
+<script src="script.js"></script>
+<div class="button_Class" id="buttonID">
+    <p>Who wants to start first?</p>
+    <button class="but" onclick="EnableBox(); changehandler(event); removeButton(); return false">Computer</button>
+    <button class="but" onclick="EnableBox(); removeButton(); return false">User</button>
+</div>
+
+
+</body>
+</html>
