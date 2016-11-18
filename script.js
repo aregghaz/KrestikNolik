@@ -25,11 +25,19 @@ function makeStep() {
 
 }
 
-function changehandler(event) {
-    checkwinnerO();
+/* user move and check */
+
+$('.bd').live('click', function() {
+    $(this).val('x');
     checkwinnerX();
+});
+
+
+/* computer move and check */
+
+function changehandler(event) {
     used.splice(used.indexOf(event.target), 1);
     makeStep();
-    checkwinnerX();
     checkwinnerO();
+
 }
