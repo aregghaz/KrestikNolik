@@ -1,6 +1,6 @@
 /**
  * Created by ashotkazaryan on 17.11.16.
- */
+
 
 
 
@@ -21,3 +21,10 @@ function EnableBox() {
      var mainDiveremove = document.getElementById('buttonID');
     document.body.removeChild(mainDiveremove);
  }
+
+
+
+
+
+
+ */

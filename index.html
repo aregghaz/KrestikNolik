@@ -3,33 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="http://yandex.st/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 
 </head>
 <body>
 <div class="mainDiv ui input focus horizontal list" id="mainDive">
-
-    <input type="button" title="0" class="bd item" id="0" MAXLENGTH="0" onchange="cheker()" onclick="changehandler(event)">
-    <input type="button" title="1" class="bd item" id="1" MAXLENGTH="0" onchange="cheker()" onclick="changehandler(event)">
-    <input type="button" title="2" class="bd item" id="2" MAXLENGTH="0" onchange="cheker()" onclick="changehandler(event)">
-    <input type="button" title="3" class="bd item" id="3" MAXLENGTH="0" onchange="cheker()" onclick="changehandler(event)">
-    <input type="button" title="4" class="bd item" id="4" MAXLENGTH="0" onchange="cheker()" onclick="changehandler(event)">
-    <input type="button" title="5" class="bd item" id="5" MAXLENGTH="0" onchange="cheker()" onclick="changehandler(event)">
-    <input type="button" title="6" class="bd item" id="6" MAXLENGTH="0" onchange="cheker()" onclick="changehandler(event)">
-    <input type="button" title="7" class="bd item" id="7" MAXLENGTH="0" onchange="cheker()" onclick="changehandler(event)">
-    <input type="button" title="8" class="bd item" id="8" MAXLENGTH="0" onchange="cheker()" onclick="changehandler(event)">
+    <div id="matrix"></div>
 </div>
+<div class="ui input focus">
+    <input type="text" title="input" id="DrawMatrix">
 
-<script src="js.js"></script>
+<button class="positive ui button but" type="submit" onclick="LetsDrawMatrix();CreatMassiv();return false">DrawMatrix</button>
+</div>
 <script src="jscheck.js"></script>
 <script src="script.js"></script>
-<div class="button_Class" id="buttonID">
-    <p>Who wants to start first?</p>
-    <button class="but" onclick="EnableBox(); changehandler(event); removeButton(); return false">Computer</button>
-    <button class="but" onclick="EnableBox(); removeButton(); return false">User</button>
-</div>
 
 
 </body>

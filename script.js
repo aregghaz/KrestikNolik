@@ -1,43 +1,44 @@
-/**
- * Created by ashotkazaryan on 17.11.16.
- */
 
-var all = [
-    document.getElementById('0'),
-    document.getElementById('1'),
-    document.getElementById('2'),
-    document.getElementById('3'),
-    document.getElementById('4'),
-    document.getElementById('5'),
-    document.getElementById('6'),
-    document.getElementById('7'),
-    document.getElementById('8')
-];
-
-<!---------------->
-var used = all.slice();
-
-<!----- Computer----->
-function makeStep() {
-    var step = Math.floor(Math.random()*used.length);
-    used[step].value = 'o';
-    used.splice(step, 1)
-
+function CreatMassiv() {
+    var mainDive2 = document.getElementById('matrix');
+    var mainDiveInput = mainDive2.getElementsByClassName('column');
+    var rray = [];
+    for (var i = 0; i < mainDiveInput.length; i++) {
+        rray[i] = mainDiveInput[i];
+    }
+    return rray;
 }
 
 /* user move and check */
+$('.column').live('click', function () {
+    if ($(this).val() === "o") {
+        alert('ci kareli')
 
-$('.bd').live('click', function() {
-    $(this).val('x');
-    checkwinnerX();
+    }
+    else if ($(this).val() === "x") {
+        alert('ci kareli');
+    }
+    else {
+        $(this).val('x')
+    }
+
+    ChekingX();
 });
 
-
-/* computer move and check */
-
-function changehandler(event) {
-    used.splice(used.indexOf(event.target), 1);
-    makeStep();
-    checkwinnerO();
-
+var used = CreatMassiv().slice();
+<!----- Computer----->
+function makeStep() {
+    var used = CreatMassiv().slice();
+    var step = Math.floor(Math.random()*used.length);
+    if (used[step].value === '') {
+        used[step].value = 'o';
+        used.splice(step, 1)
+    }
 }
+function changehandler(event) {
+    var used = CreatMassiv().slice();
+    makeStep();
+    used.splice(used.indexOf(event.target), 1);
+    ChekingO();
+}
+
